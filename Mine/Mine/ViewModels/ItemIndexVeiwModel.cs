@@ -34,7 +34,7 @@ namespace Mine.ViewModels
                 await DeleteAsync(data);
             });
 
-            MessagingCenter.Subscribe<ItemDeletePage, ItemModel>(this, "UpdateItem", async (obj, item) =>
+            MessagingCenter.Subscribe<ItemUpdatePage, ItemModel>(this, "UpdateItem", async (obj, item) =>
             {
                 var data = item as ItemModel;
                 await UpdateAsync(data);
