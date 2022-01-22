@@ -51,7 +51,7 @@ namespace Mine.Views
             ValueValue.Text = String.Format("{0}", e.NewValue);
         }
 
-        async void Save_Clicked(object sender, EventArgs e)
+        async void UpdateItem(object sender, EventArgs e)
         {
             MessagingCenter.Send(this, "AddItem", Item);
             await Navigation.PopModalAsync();
