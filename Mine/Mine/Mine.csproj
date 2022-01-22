@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -18,6 +18,9 @@
   <ItemGroup>
     <Compile Update="Views\Items\ItemCreatePage.xaml.cs">
       <DependentUpon>ItemCreatePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Items\ItemDeletePage.xaml.cs">
+      <DependentUpon>ItemDeletePage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\Items\ItemReadPage.xaml.cs">
       <DependentUpon>ItemReadPage.xaml</DependentUpon>
