@@ -7,7 +7,7 @@ using Mine.Models;
 namespace UnitTests.Models
 {
     [TestFixture]
-    class ItemModelTests
+    public class ItemModelTests
     {
         [Test]
         public void ItemModel_Constructor_Valid_Default_Should_Pass()
@@ -21,6 +21,27 @@ namespace UnitTests.Models
 
             //Assert
             Assert.IsNotNull(result);
+        }
+
+        [Test]
+        public void ItemModel_Set_Get_Valid_Default_Should_Pass()
+        {
+            //Arrage
+
+            //Act
+            var result = new ItemModel();
+            result.Description = "Description";
+            result.Id = "ID";
+            result.Text = "Text";
+            result.Value = 1;
+
+            //Reset
+
+            //Assert
+            Assert.AreEqual("Description", result.Description);
+            Assert.AreEqual("ID", result.Id);
+            Assert.AreEqual("Text", result.Text);
+            Assert.AreEqual(1, result.Value);
         }
     }
 }
